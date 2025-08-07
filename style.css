@@ -908,5 +908,32 @@ footer {
     color: white;
 }
 
-/* Mobile Responsiveness */
-/* General Styles Reset */
+.main-container .image {
+  width: 72vw;
+  max-width: 320px;
+  min-width: 90px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 0 28px #34bef5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%; /* shift center a bit lower */
+  border-radius: 50%;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .main-container .image {
+    width: 95vw;
+    max-width: 180px;
+    min-width: 60px;
+  }
+}
